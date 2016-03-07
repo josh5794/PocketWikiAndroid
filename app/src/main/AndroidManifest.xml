@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pocketwiki.pocketwiki" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".CityCategoryListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".SplashActivity"
+            android:theme="@style/theme_activity_style_explore" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocketwiki.pocketwiki.SplashActivity" />
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_splash_activity_style" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FilterActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".CityCategoryListActivity"
+            android:theme="@style/theme_activity_style_filter" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocketwiki.pocketwiki.SplashActivity" />
+        </activity>
+        <activity
+            android:name=".EntityDetailsActivity"
+            android:label="@string/title_activity_entity_details"
+            android:parentActivityName=".CityCategoryListActivity"
+            android:theme="@style/theme_activity_style_entitydetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocketwiki.pocketwiki.SplashActivity" />>
+        </activity>
+    </application>
+
+</manifest>

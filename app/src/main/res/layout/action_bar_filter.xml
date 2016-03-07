@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="@dimen/action_bar_title_textsize"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif-light"
+    android:text="@string/title_filter"/>
